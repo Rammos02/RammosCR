@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMMOS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: url('https://i.pinimg.com/originals/90/c2/0f/90c20f124236af1579518ea0e2d39052.jpg') no-repeat center bottom;
+            background-size: cover;
+            height: 200px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 100px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px darkmagenta;
+            -webkit-text-stroke: 2px black;
+            animation: pulseGlow 2s infinite ease-in-out;
+        }
+        
+        @keyframes pulseGlow {
+            0% { text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px darkmagenta; }
+            50% { text-shadow: 0 0 20px violet, 0 0 40px magenta, 0 0 50px red; }
+            100% { text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px darkmagenta; }
+        }
+        
+        nav {
+            background-color: #222;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 15px;
+            font-size: 18px;
+            transition: transform 0.3s ease-in-out;
+        }
+        nav a:hover {
+            transform: scale(1.2);
+            color: red;
+        }
+        
+        .banner {
+            position: relative;
+            text-align: center;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .banner-text {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+            50% { transform: translate(-50%, -50%) translateY(-10px); }
+        }
+        
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                font-size: 50px;
+                height: 150px;
+            }
+            nav a {
+                font-size: 16px;
+            }
+            .banner-text {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>RAMMOS</header>
+    <nav>
+        <a href="#">Αρχική</a>
+        <a href="#">Νέα</a>
+        <a href="#">Decks</a>
+        <a href="#">Media</a>
+        <a href="#">Επικοινωνία</a>
+    </nav>
+    <div class="banner">
+        <img src="https://wallpapercave.com/wp/wp1815965.jpg" alt="Clash Royale Banner">
+        <div class="banner-text">
+            <h1>Learn how to build strategy..</h1>
+            <p>And become better in CLASH ROYALE</p>
+        </div>
+    </div>
+    <div class="content">
+        <h1>STAY TUNED...</h1>
+        <p>Hi hi hi ha</p>
+    </div>
+</body>
+</html>
